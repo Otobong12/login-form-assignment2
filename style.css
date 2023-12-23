@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(46, 196, 182, .4);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 50px 0px;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: var(--CL-Black, #000B0A);
+    font-family: Brown;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    /* 125% */
+    letter-spacing: -0.8px;
+}
+
+p {
+    color: var(--CL-Grey, #737373);
+    font-family: Brown;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 400px;
+}
+
+form {
+    width: fit-content;
+    border-radius: 6px;
+    background: #FFF;
+    padding: 30px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.details1 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--Text-Headings, #011C34);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+input {
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 130%;
+    padding: 12px 20px;
+}
+
+select {
+    padding: 12px 109px 12px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.password {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+input[type="button"] {
+    background-color: var(--CL-Green, #2EC4B6);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.10);
+    border: none;
+    color: #FFF;
+}
+
+small {
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+
+
+
+
+@media (max-width: 800px) {
+    main {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+       
+    }
+
+    .content {
+        padding-bottom: 20px;
+    }
+
+    .details1 {
+        display: block;
+        /* margin-bottom: 30px; */
+    }
+
+    input[type="date"] {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    input {
+        margin-bottom: 30px;
+    }
+
+    select {
+        margin-bottom: 30px;
+    }
+}
